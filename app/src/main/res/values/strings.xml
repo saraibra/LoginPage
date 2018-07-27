@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Team Task</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="password">Password</string>
+    <string name="again">Again</string>
+    <string name="phone">Mobile Number</string>
+    <string name="contin">continue</string>
+    <string name="text">Already have an account ? Sign In</string>
+</resources>

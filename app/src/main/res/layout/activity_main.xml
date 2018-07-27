@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+
+    tools:context=".MainActivity">
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="100dp"
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/email_EditText"
+            android:hint="@string/emailAddress"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/email"
+            android:background="@color/gray"
+            android:paddingLeft="8dp"
+            android:textSize="18sp"
+            android:drawablePadding="8dp"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/emailLayout"
+        android:id="@+id/passwordLayout"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColorHint="@android:color/white">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/password_EditText"
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="@color/gray"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="8dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+
+                android:textColor="@android:color/white"
+                android:paddingLeft="8dp"
+                android:textSize="18sp"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:textColorHint="@android:color/white"
+
+            >
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/passwordAgain_EditText"
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:background="@color/gray"
+                android:drawableLeft="@drawable/passworda"
+                android:drawablePadding="8dp"
+                android:paddingLeft="8dp"
+                android:drawableTint="@android:color/white"
+                android:hint="@string/again"
+                android:inputType="textPassword"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        android:layout_below="@+id/passwordLayout"
+        android:id="@+id/phoneLayout"
+
+        >
+
+        <android.support.v7.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/phone_EditText"
+            android:hint="@string/phone"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/phone"
+            android:background="@color/gray"
+
+            android:paddingLeft="8dp"
+            android:textSize="18sp"
+            android:drawablePadding="8dp"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray"
+        android:text="@string/contin"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/phoneLayout"
+        android:id="@+id/continueButton"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/text"
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+</RelativeLayout>
